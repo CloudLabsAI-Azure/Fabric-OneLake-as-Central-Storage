@@ -1,4 +1,4 @@
-# One Lake as Central Storage
+# fabric OneLake as Central Storage
 
 ## Lab Overview
 
