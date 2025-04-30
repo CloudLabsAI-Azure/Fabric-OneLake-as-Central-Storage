@@ -52,7 +52,7 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
 
    ![](../media/img3.png)
 
-1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\datasets\LIFE_EXPECTANCY.csv`. Click on **Next**.
+1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\fabricfiles\datasets\LIFE_EXPECTANCY.csv`. Click on **Next**.
 
    ![](../media/img4up.png)
 
@@ -70,7 +70,7 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
 
    ![](../media/img3.png)
 
-1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\datasets\GDP_PER_CAPITA.csv`. Click on **Next**.
+1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\fabricfiles\datasets\GDP_PER_CAPITA.csv`. Click on **Next**.
 
    ![](../media/img4.png)
 
@@ -94,7 +94,13 @@ In this task, you will create a new workspace and Lakehouse in Microsoft Fabric.
 
 1. Open a browser and navigate to [https://app.fabric.microsoft.com](https://app.fabric.microsoft.com).
 
-1. Login to fabric
+1. Once logged in, select the profile icon, and click on **Free Trial**.
+
+   ![](../media/imgup3.png)
+
+1. In the next pane, click on **Activate**.
+
+   ![](../media/imgup4.png)
 
 1. On the **Fabric Home** page, click on **New workspace** to create a workspace.
 
@@ -143,13 +149,21 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
 
    ![](../media/img16.png)
 
-1. In the next pane, select **fabric-bucket** and click on **Next**.
+1. In the next pane, click on **Skip**.
+
+   ![](../media/imgup5.png)
+
+1. In the next pane, select **fabric-onelake-regions** and click on **Next**.
 
    ![](../media/img17.png)
 
+1. Once done, click on **Create** to create the shortcut.
+
+   ![](../media/imgup6.png)
+
 1. Once created, you will be able to see that the shorcut is successfully created.
 
-   ![](../media/img67.png)
+   ![](../media/imgup7.png)
 
 ## Task 4: Mirror POPULATION table from the Snowflake database into a Microsoft Fabric Lakehouse 
 
@@ -162,6 +176,10 @@ In this task, you will mirror the POPULATION.csv dataset from a Snowflake accoun
 1. From the list, select **Mirrored Snowflake**.
 
    ![](../media/img28.png)
+
+1. In the next pane, select **Snowflake**.
+
+   ![](../media/imgup8.png)
 
 1. On the connection settings pane, provide the following details and click on **Connect**.
 
@@ -182,6 +200,10 @@ In this task, you will mirror the POPULATION.csv dataset from a Snowflake accoun
 
    ![](../media/img30.png)
 
+1. In the destination pane, click on **Create mirrored database**.
+
+   ![](../media/imgup9.png)
+
 1. Once done, now you can see the Status as **Running** for Mirroring process, this may take some time, please continue with the further tasks.
 
    ![](../media/img31.png)
@@ -197,6 +219,10 @@ In this task, you will ingest the GDP_PER_CAPITA.csv and LIFE_EXPECTANCY.csv dat
 1. From the list, select **Data pipeline**.
 
    ![](../media/img13.png)
+
+1. Provide the name as **GapminderPipeline** and click on **Create**.
+
+   ![](../media/imgup10.png)
 
 1. Once created, select **Copy data assistant** option.
 
@@ -221,7 +247,9 @@ In this task, you will ingest the GDP_PER_CAPITA.csv and LIFE_EXPECTANCY.csv dat
 
    ![](../media/img21.png)
 
-1. Choose **Lakehouse** as the destination, select the GapMinder Lakehouse, and accept defaults.
+1. Choose **GapMinder** Lakehouse as the destination.
+
+   ![](../media/imgup11.png)
 
 1. In the next pane, make sure two tables are present and click on **Next**.
 
@@ -230,6 +258,10 @@ In this task, you will ingest the GDP_PER_CAPITA.csv and LIFE_EXPECTANCY.csv dat
 1. Click on **Save + Run**.
 
    ![](../media/img24.png)
+
+1. Once done, a pop up will be opened for paramaters, leave all the default settings and click on **Ok**.
+
+   ![](../media/imgup12.png)
 
 1. Once done, you will see a pipeline running, wait till the **Activity status** changes to **Succeeded**.
 
@@ -253,17 +285,17 @@ In this task, you will load the REGIONS.csv file from the source folder into a L
 
 1. Switch back to the **Lakehouse View**.
 
-1. Right-click the `fabric-bucket` folder under Files and select **Load to Tables** and click on **New table**.
+1. Right-click the `fabric-onelake-regions` folder under Files and select **Load to Tables** and click on **New table**.
 
-   ![](../media/img34.png)
+   ![](../media/imgup13.png)
 
 1. On the **Load folder to new table**, provide **New table name** as **REGIONS** and **File type** as **csv**. Click on **Load**.
 
    ![](../media/img35.png)
 
-1. Once completed, you can verify that REGIONS.csv is loaded by clicking on the **fabric-bucket** folder under Files.
+1. Once completed, you can verify that REGIONS table is created under **Tables**.
 
-   ![](../media/img36.png)
+   ![](../media/imgup14.png)
 
 ## Task 7: Create the Views Needed for the Visualization
 
@@ -336,17 +368,45 @@ In this task, you will use Power BI Desktop to connect to the Fabric Lakehouse S
 
 1. Inside **Power BI Desktop**, select **Blank report**.
 
-   ![](../media/img41.png)
-
 1. Click the **OneLake data hub** button from the top menu.
 
    ![](../media/img42.png)
 
-1. If alerts for Sign in, use the same credentials to log in.
+1. 1. In the **Enter your email address** pop up, provide **Email** as **<inject key="AzureAdUserEmail"></inject>** and click on **Continue**.
+
+   ![](../media/imgup15.png)
+
+1. If alerts for Sign in, enter the provided email or username, and click **Next** to proceed.
+
+   - Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+     ![](../media/imgup16.png)
+
+1. Now, enter the following password and click on **Sign in**.
+
+   - Password: <inject key="AzureAdUserPassword"></inject>
+
+     ![](../media/imgup17.png)
+
+1. In the next pane, click on **No, this app only**.
+
+   ![](../media/imgup18.png)
 
 1. Select the GapMinder Lakehouse, click the down-arrow on **Connect**, and choose **Connect to SQL Endpoint**.
 
    ![](../media/img44.png)
+
+1. Once after clicking on connect, you will get a pop up to login for office 365, enter the provided email or username, and click **Next** to proceed.
+
+   - Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+     ![](../media/imgup19.png)
+
+1. Now, enter the following password and click on **Sign in**.
+
+   - Password: <inject key="AzureAdUserPassword"></inject>
+
+     ![](../media/imgup20.png)
 
 1. In the Navigator pane, select **GapMinder_Facts**, **GapMinder_Regions** and click on **Load**.
 
@@ -400,7 +460,8 @@ In this task, you will use Power BI Desktop to connect to the Fabric Lakehouse S
 
    ![](../media/img58.png)
 
-1. In the **Build Visual** pane:
+1. In the **Build Visual** pane drag and drop the respective tables to the positions as given below: 
+
    - Add `GapMinder_Regions.Country` to **Values**.
    - Add `GapMinder_Facts.income_per_capita` to **X-Axis**.
    - Add `GapMinder_Facts.lifeexpectancy` to **Y-Axis**.
