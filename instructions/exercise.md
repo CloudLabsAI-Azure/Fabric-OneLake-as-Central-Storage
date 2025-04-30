@@ -141,7 +141,7 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
 
    | Key    | Value                                                |
    |--------|------------------------------------------------------|
-   | Url | https://fabric-onelake-regions.s3.eu-north-1.amazonaws.com |
+   | Url | https://fabric-onelake-region.s3.us-west-2.amazonaws.com |
    | Connection name | leave as default |
    | Access key Id | <inject key="Aws S3 Access key" enableCopy="true"/> |
    | Secret Access key | <inject key="Aws S3 Secret" enableCopy="true"/> |
@@ -152,7 +152,7 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
 
    ![](../media/imgup5.png)
 
-1. In the next pane, select **fabric-onelake-regions** and click on **Next**.
+1. In the next pane, select **fabric-onelake-region** and click on **Next**.
 
    ![](../media/img17.png)
 
@@ -284,7 +284,7 @@ In this task, you will load the REGIONS.csv file from the source folder into a L
 
 1. Switch back to the **Lakehouse View**.
 
-1. Right-click the `fabric-onelake-regions` folder under Files and select **Load to Tables** and click on **New table**.
+1. Right-click the `fabric-onelake-region` folder under Files and select **Load to Tables** and click on **New table**.
 
    ![](../media/imgup13.png)
 
