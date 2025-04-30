@@ -1,4 +1,4 @@
-# fabric OneLake as Central Storage
+# Fabric OneLake as Central Storage
 
 ## Lab Overview
 
@@ -41,21 +41,30 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
    | Password | Smoothie@2025 |
    | Database | **olcs** |
 
-   ![](../media/img2.png)
+   ![](../media/img2up.png)
 
-1. Once after the connection is added, under servers, right-click on **sql fabric** connection and select **Import wizard**.
+1. Once after the connection is added, click on **Connections** tab.
+
+   ![](../media/imgup1.png)
+
+
+1. Under servers, right-click on **sql fabric** connection and select **Import wizard**.
 
    ![](../media/img3.png)
 
 1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\datasets\LIFE_EXPECTANCY.csv`. Click on **Next**.
 
-   ![](../media/img4.png)
+   ![](../media/img4up.png)
 
 1. On the **Preview** pane, click on **Next** and continue.
+
+   ![](../media/imgup2.png)
 
 1. In the **Modify Columns** step, check the **Primary Key** boxes as shown for **country** and **year** columns. Click on **Import data**.
 
    ![](../media/img5.png)
+
+1. Click on **Done** to complete the Import data process.
 
 1. Once imported, again right-click on **sql fabric** connection and select **Import wizard**.
 
@@ -67,9 +76,13 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
 
 1. On the **Preview** pane, click on **Next** and continue.
 
+   ![](../media/imgup2.png)
+
 1. In the **Modify Columns** step, check the **Primary Key** boxes as shown for **country** and **year** columns. Click on **Import data**.
 
    ![](../media/img5.png)
+
+1. Click on **Done** to complete the Import data process.
 
 1. Wait for the import process to complete, and you will see the GDP_PER_CAPITA and LIFE_EXPECTANCY tables successfully loaded into your Azure SQL database.
 
@@ -123,10 +136,10 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
 
    | Key    | Value                                                |
    |--------|------------------------------------------------------|
-   | Url | S3-URL |
+   | Url | https://fabric-onelake-regions.s3.eu-north-1.amazonaws.com |
    | Connection name | leave as default |
-   | Access key Id | KEY |
-   | Secret Access key | Secret |
+   | Access key Id |  |
+   | Secret Access key |  |
 
    ![](../media/img16.png)
 
