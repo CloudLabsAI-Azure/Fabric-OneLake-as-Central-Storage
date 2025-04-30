@@ -1,0 +1,18 @@
+[
+    {
+      "Name": "Fabric OneLake as Central Storage DREAM Lab",
+      "Language": "English",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-OneLake-as-Central-Storage",
+      "Files": [
+              {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-OneLake-as-Central-Storage/refs/heads/main/instructions/getting-started.md",
+          "Order": 0
+        },
+  
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-OneLake-as-Central-Storage/refs/heads/main/instructions/exercise.md",
+          "Order": 1
+        }
+      ]
+    }
+  ]
