@@ -144,8 +144,8 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
    |--------|------------------------------------------------------|
    | Url | https://fabric-onelake-regions.s3.eu-north-1.amazonaws.com |
    | Connection name | leave as default |
-   | Access key Id |  |
-   | Secret Access key |  |
+   | Access key Id | <inject key="Aws S3 Access key" enableCopy="true"/> |
+   | Secret Access key | <inject key="Aws S3 Secret" enableCopy="true"/> |
 
    ![](../media/img16.png)
 
