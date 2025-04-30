@@ -372,7 +372,7 @@ In this task, you will use Power BI Desktop to connect to the Fabric Lakehouse S
 
    ![](../media/img42.png)
 
-1. 1. In the **Enter your email address** pop up, provide **Email** as **<inject key="AzureAdUserEmail"></inject>** and click on **Continue**.
+1. In the **Enter your email address** pop up, provide **Email** as **<inject key="AzureAdUserEmail"></inject>** and click on **Continue**.
 
    ![](../media/imgup15.png)
 
