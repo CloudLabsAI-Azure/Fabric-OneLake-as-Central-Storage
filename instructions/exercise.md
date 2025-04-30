@@ -47,7 +47,6 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
 
    ![](../media/imgup1.png)
 
-
 1. Under servers, right-click on **sql fabric** connection and select **Import wizard**.
 
    ![](../media/img3.png)
@@ -185,10 +184,10 @@ In this task, you will mirror the POPULATION.csv dataset from a Snowflake accoun
 
    | Key    | Value                                                |
    |--------|------------------------------------------------------|
-   | Server | Snowflake URL |
-   | Warehouse | warehousename |
-   | Username | Username |
-   | Password | Password |
+   | Server | itcbmjv-fn13927.snowflakecomputing.com |
+   | Warehouse | COMPUTE_WH |
+   | Username | FABRICUSER |
+   | Password | Fabric123456789 |
 
    ![](../media/img27.png)
 
