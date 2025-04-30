@@ -261,7 +261,7 @@ In this task, you will ingest the GDP_PER_CAPITA.csv and LIFE_EXPECTANCY.csv dat
 
 1. Once done, a pop up will be opened for paramaters, leave all the default settings and click on **Ok**.
 
-   ![](../media/imgup12.png)
+   ![](../media/imgup12up.png)
 
 1. Once done, you will see a pipeline running, wait till the **Activity status** changes to **Succeeded**.
 
@@ -380,7 +380,7 @@ In this task, you will use Power BI Desktop to connect to the Fabric Lakehouse S
 
    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![](../media/imgup16.png)
+     ![](../media/imgup16up.png)
 
 1. Now, enter the following password and click on **Sign in**.
 
