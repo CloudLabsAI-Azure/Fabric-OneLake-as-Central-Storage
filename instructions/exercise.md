@@ -71,15 +71,15 @@ In this task, you will upload two datasets—**GDP_PER_CAPITA.csv** and **LIFE_E
 
 1. On the **Import flat file wizard** pane, select **olcs** from the dropdown for **database the table is created in**, click on **Browse** and select `C:\fabricfiles\datasets\GDP_PER_CAPITA.csv`. Click on **Next**.
 
-   ![](../media/img4.png)
+   ![](../media/imgup22.png)
 
 1. On the **Preview** pane, click on **Next** and continue.
 
-   ![](../media/imgup2.png)
+   ![](../media/imgup23.png)
 
 1. In the **Modify Columns** step, check the **Primary Key** boxes as shown for **country** and **year** columns. Click on **Import data**.
 
-   ![](../media/img5.png)
+   ![](../media/imgup24.png)
 
 1. Click on **Done** to complete the Import data process.
 
@@ -95,11 +95,15 @@ In this task, you will create a new workspace and Lakehouse in Microsoft Fabric.
 
 1. Once logged in, select the profile icon, and click on **Free Trial**.
 
-   ![](../media/imgup3.png)
+   ![](../media/imgup3upd.png)
 
 1. In the next pane, click on **Activate**.
 
    ![](../media/imgup4.png)
+
+1. Once after activating, a pop up window will appear, please click on **Got it**.
+
+   ![](../media/imgup25.png)
 
 1. On the **Fabric Home** page, click on **New workspace** to create a workspace.
 
@@ -137,7 +141,7 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
 
    ![](../media/img66.png)
 
-1. On the **Connection settings** pane, provide the following details and click on **Next**.
+1. On the **Connection settings** pane, check **Create new connection** option, provide the following details and click on **Next**.
 
    | Key    | Value                                                |
    |--------|------------------------------------------------------|
@@ -146,7 +150,7 @@ In this task, you will onboard the REGIONS.csv file from an Amazon S3 bucket int
    | Access key Id | <inject key="Aws S3 Access key" enableCopy="true"/> |
    | Secret Access key | <inject key="Aws S3 Secret" enableCopy="true"/> |
 
-   ![](../media/img16.png)
+   ![](../media/imgup26.png)
 
 1. In the next pane, click on **Skip**.
 
@@ -194,6 +198,8 @@ In this task, you will mirror the POPULATION.csv dataset from a Snowflake accoun
 1. In the next pane, select **POPULATIONFORECASTS** database and click on **Connect**.
 
    ![](../media/img29.png)
+
+   >**Note**: It may take some time for the database to populate.
 
 1. In the **Choose data** page, check the box for **Select all** option and click on **Connect**.
 
